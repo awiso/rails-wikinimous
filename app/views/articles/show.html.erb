@@ -1,0 +1,4 @@
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<p><%= link_to ' ✏️ ', edit_article_path %><%= link_to ' 🗑 ', article_path(@article), method: :delete %></p>
+<%= link_to ' ↩️ Back', articles_path %>
